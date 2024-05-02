@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="ts/index.js"></script>
+</head>
+<body>
+    <div class="container" id="ul">
+        <ul class="ul">
+            <li onclick="home()"><a href="#">Home</a></li>
+            <li><a href="#">Medicine Details</a></li>
+            <li><a href="#">Purchase</a></li>
+            <li><a href="#">Cancel</a></li>
+            <li onclick="recharge()"><a href="#">Recharge</a></li>
+            <li onclick="showbalance()"><a href="#" >Show Balance </a></li>
+            <li><a href="#">Order History</a></li>
+        </ul>
+    </div>
+    <div class="balance">
+        <p class="balance" id="balance"></p>
+    </div>
+    <div class="home">
+        <p class="home" id="home"></p>
+    </div>
+    <div class="recharge" id="recharge1">
+        <p>enter your text here</p>
+        <input type="text" name="" id="inputrecharge">
+        <p class="recharge" id="recharge"></p>
+    </div>
+    <div class="wrapper" id="wrapper">
+    <div class="btn" id="btn">
+        <button onclick="signup()" id="up">Sign Up</button>
+        <button onclick="signin()" id="in">SignIn</button>
+    </div>
+    <div class="signup" id="signup" >
+        <form action="" onsubmit="subsignup(event)">
+           
+            <br>
+            <label for="name">Name</label>
+            <br>
+            <input type="text" placeholder="enter text here" id="name">
+            <br>
+            <label for="email">email</label>
+            <br>
+            <input type="email" id="email" placeholder="enter text here">
+            <br>
+            <label for="phone">Phone</label>
+            <br>
+            <input type="number" id="phone" placeholder="enter text here">
+            <br>
+            <label for="balance">Balance</label>
+            <br>
+            <input type="number" id="balance" placeholder="enter text here">
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password" placeholder="enter text here">
+            <br>
+            <label for="new password">New Password</label>
+            <br>
+            <input type="password" id="password" placeholder="enter text here">
+            <br>
+            <input type="submit" value="submit" >
+        </form>
+    </div>
+    <div class="signin" id="signin" >
+        <form action="" onsubmit="subsignin(event)">
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email1" placeholder="enter text here">
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password1" placeholder="enter text here">
+            <br>
+            <input type="submit" value="submit" >
+       </form>
+    </div>
+</body>
+</html>
